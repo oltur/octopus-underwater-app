@@ -58,5 +58,6 @@ jobs:
       uses: kodermax/kubectl-aws-eks@master
       env:
         KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+        ECR_REPOSITORY: ${{ secrets.REPO_NAME }}
       with:
         args: rollout status deployment/$ECR_REPOSITORY
