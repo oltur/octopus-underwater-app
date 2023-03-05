@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: octopus-underwater-app
-          image: 482456235534.dkr.ecr.eu-west-1.amazonaws.com/octopus-underwater-app:latest
+          image: 916438688338.dkr.ecr.eu-west-1.amazonaws.com/oltur-terraform:latest
           ports:
             - containerPort: 80
               protocol: TCP
