@@ -3,12 +3,12 @@ kind: Deployment
 metadata:
   name: oltur-terraform
   labels:
-    app: ooltur-terraform
+    app: oltur-terraform
 spec:
   selector:
     matchLabels:
         app: oltur-terraform
-  replicas: 3
+  replicas: 2
   strategy:
     type: RollingUpdate
   template:
