@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: underwater-app-github
+  name: oltur-terraform
   labels:
-    app: octopus-underwater-app
+    app: ooltur-terraform
 spec:
   selector:
     matchLabels:
-        app: octopus-underwater-app
+        app: oltur-terraform
   replicas: 3
   strategy:
     type: RollingUpdate
   template:
     metadata:
       labels:
-        app: octopus-underwater-app
+        app: oltur-terraform
     spec:
       containers:
-        - name: octopus-underwater-app
+        - name: oltur-terraform
           image: 916438688338.dkr.ecr.eu-west-1.amazonaws.com/oltur-terraform:latest
           ports:
             - containerPort: 80
