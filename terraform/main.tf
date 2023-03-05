@@ -1,9 +1,18 @@
 
+variable "aws_access_key" {
+  type    = string
+  default = ""
+}
+
+variable "aws_secret_key" {
+  type    = string
+  default = ""
+}
 
 provider "aws" {
   region     = "eu-west-1"
-  access_key = "AKIA5KYAAUJJEMF5D4JJ"
-  secret_key = "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"
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
 }
 
 # data "aws_ami" "app_ami" {

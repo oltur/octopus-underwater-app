@@ -36,3 +36,7 @@ terraform/.terraform.lock.hcl
 rootkey.csv
 .gitignore
 k8s/eksKeyPair.pem
+.DS_Store
+root-key.csv
+.gitignore
+terraform_accessKeys (2).csv
